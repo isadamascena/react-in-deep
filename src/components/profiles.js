@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Profile = () => {
+const Profile = (props) => {
+
     return(
         <div>
-            Profile
+            <Link to={`${props.match.url}/post`}>take me to /profile/post</Link>
         </div>
     );
 }
