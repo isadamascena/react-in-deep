@@ -27,9 +27,10 @@ const App = () => {
                 </header>
                 <Switch>
                     <Route path="/posts/:id" component={PostItem} />
-                    <Route path="/posts" exact component={Posts} />
+                    <Route path="/posts" component={Posts} />
                     <Route path="/profiles" component={Profile} />
                     <Route path="/" exact component={Home} />
+                    <Route render={()=> <h3>oops 404</h3>} />
                 </Switch>
             </div>
         </BrowserRouter>
